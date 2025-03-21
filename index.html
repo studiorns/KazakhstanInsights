@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Metrics Guide for CMO - Kazakhstan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* SONER Logo Animation */
+        @keyframes sonerScan { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes sonerBlip { 0%, 20%, 100% { opacity: 0; } 2%, 15% { opacity: 1; } 3% { transform: scale(1.2); } }
+        
+        /* SONER Logo styles */
+        .soner-logo { display: flex; align-items: center; color: white; font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 300; }
+        .soner-radar { width: 24px; height: 24px; border-radius: 50%; border: 1px solid white; margin: 0 3px; position: relative; background-color: rgba(255, 255, 255, 0.05); overflow: hidden; }
+        .soner-scanner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; animation: sonerScan 4s linear infinite; transform-origin: center; }
+        .soner-scanner::before { content: ''; position: absolute; top: 0; left: 50%; width: 50%; height: 50%; background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); transform-origin: bottom left; clip-path: polygon(0 0, 100% 0, 0 100%); }
+        .soner-scanner::after { content: ''; position: absolute; top: 0; left: 50%; width: 50%; height: 1px; background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)); transform-origin: left center; box-shadow: 0 0 4px rgba(255, 255, 255, 0.8); }
+        .soner-blip { position: absolute; width: 2px; height: 2px; background-color: white; border-radius: 50%; opacity: 0; box-shadow: 0 0 4px white; }
+        .soner-blip:nth-child(1) { top: 25%; left: 30%; animation: sonerBlip 4s 1s infinite; }
+        .soner-blip:nth-child(2) { top: 65%; left: 60%; animation: sonerBlip 4s 2.5s infinite; }
+        .soner-tagline { color: white; font-size: 8px; text-transform: uppercase; font-weight: 500; letter-spacing: 0.5em; margin-left: 10px; opacity: 0.8; }
+
+        :root {
+            --primary: #4285f4;
+            --primary-light: #1a2233;
+            --primary-dark: #8ab4f8;
+            --secondary: #34a853;
+            --secondary-light: #1a2a1e;
+            --warning: #fbbc04;
+            --warning-light: #332a1a;
+            --danger: #ea4335;
+            --danger-light: #331f1e;
+            --gray-100: #1e1e1e;
+            --gray-200: #2d2d2d;
+            --gray-300: #3d3d3d;
+            --gray-400: #4d4d4d;
+            --gray-500: #777777;
+            --gray-600: #a0a0a0;
+            --gray-700: #c0c0c0;
+            --gray-800: #e0e0e0;
+            --gray-900: #f0f0f0;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 15px 25px rgba(0, 0, 0, 0.6);
+            --radius-sm: 4px;
+            --radius: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-800);
+            background-color: var(--gray-100);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a73e8 0%, #174ea6 100%);
+            color: white;
+            padding: 32px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI0MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjRkZGIiBzdG9wLW9wYWNpdHk9Ii4wNSIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iLjAyIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNMTQ0MCAyMDBjLTEzMS44LTEyLjktMjY3LjgtMTkuNC00MDgtMTkuNC0xNDAuMiAwLTI3Ni4yIDYuNS00MDggMTkuNFYwaDgxNnYyMDB6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+        }
+        
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: var(--gray-800);
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.8rem;
+            color: var(--gray-800);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--gray-800);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+        }
+        
+        .card {
+            background-color: var(--gray-200);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-2px);
+        }
+        
+        .metric-card {
+            background-color: var(--gray-200);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .metric-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin: 0;
+        }
+        
+        .metric-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            background-color: var(--primary-light);
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+        
+        .metric-description {
+            margin-bottom: 15px;
+            color: var(--gray-700);
+        }
+        
+        .calculation {
+            background-color: var(--gray-100);
+            padding: 15px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 15px;
+            border-left: 3px solid var(--gray-400);
+        }
+        
+        .calculation h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--gray-800);
+        }
+        
+        .interpretation {
+            margin-bottom: 15px;
+        }
+        
+        .interpretation h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--gray-800);
+        }
+        
+        .interpretation ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .business-implications {
+            background-color: var(--secondary-light);
+            padding: 15px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 15px;
+            border-left: 3px solid var(--secondary);
+        }
+        
+        .business-implications h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        .business-implications ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        
+        .business-implications li {
+            margin-bottom: 8px;
+        }
+        
+        .business-implications li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .example {
+            background-color: var(--warning-light);
+            padding: 15px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 15px;
+            border-left: 3px solid var(--warning);
+        }
+        
+        .example h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #d68000;
+        }
+        
+        .section-intro {
+            background-color: var(--primary-light);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .section-intro p {
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            background-color: var(--gray-100);
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid var(--gray-300);
+        }
+        
+        .footer p {
+            color: var(--gray-700);
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.3rem;
+            }
+            
+            .card, .metric-card {
+                padding: 20px;
+            }
+            
+            .metric-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .metric-value {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
+                <div class="soner-logo">
+                    S<div class="soner-radar">
+                        <div class="soner-scanner"></div>
+                        <div class="soner-blip"></div>
+                        <div class="soner-blip"></div>
+                    </div>NER
+                    <span class="soner-tagline">Visual Intelligence</span>
+                </div>
+            </div>
+            <h1>Kazakhstan Market Metrics & Insights</h1>
+            <h2 style="font-size: 1.3rem; margin-top: 5px; font-weight: 500; border-bottom: none; padding-bottom: 0; color: white;">Department of Culture and Tourism - Abu Dhabi</h2>
+            <p>Market Analysis and Performance Indicators</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>This guide provides detailed explanations of the key metrics and insights used in our market analysis dashboards. It is designed to help decision-makers understand the technical aspects of our market performance indicators and their business implications.</p>
+            <p>Each metric is explained in terms of:</p>
+            <ul>
+                <li>What it measures</li>
+                <li>How it's calculated</li>
+                <li>How to interpret different values</li>
+                <li>Business implications and actionable insights</li>
+                <li>Practical examples where applicable</li>
+            </ul>
+            <p>The metrics are organized into categories that align with our dashboard structure, making it easy to reference when reviewing market performance.</p>
+        </div>
+        
+        <h2>Brand Health Metrics</h2>
+        <div class="section-intro">
+            <p>Brand health metrics measure consumer perceptions and attitudes toward our destination. These metrics are leading indicators that typically precede changes in actual travel behavior.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Awareness</h3>
+                <div class="metric-value">30.01% (+5.01pp)</div>
+            </div>
+            <p class="metric-description">Awareness measures the percentage of the target audience who are aware of Abu Dhabi as a Cultural and Sea & Sun travel destination.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on survey responses to questions like "Which international holiday destinations offering a combination of both cultural and sun & beach activities are you aware of?" The percentage represents those who respond positively out of the total surveyed population.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>90%+</strong>: Excellent awareness, approaching market saturation</li>
+                    <li><strong>70-90%</strong>: Strong awareness, but room for improvement</li>
+                    <li><strong>50-70%</strong>: Moderate awareness, significant opportunity for growth</li>
+                    <li><strong>&lt;50%</strong>: Low awareness, major opportunity but requires substantial investment</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>At 30.01%, Kazakhstan has low awareness of Abu Dhabi, indicating significant opportunity for growth.</li>
+                    <li>The +5.01pp year-over-year growth suggests strong positive momentum in awareness levels.</li>
+                    <li>This substantial growth rate (+5.01pp) is among the highest in emerging markets, indicating effective penetration of marketing messages.</li>
+                    <li>Marketing should maintain strong awareness-building efforts as the primary focus for this market.</li>
+                    <li>The positive trend in awareness provides a solid foundation for building the marketing funnel, though significant investment is still required to reach moderate awareness levels.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Consideration</h3>
+                <div class="metric-value">13.72% (+1.72pp)</div>
+            </div>
+            <p class="metric-description">Consideration measures the percentage of aware consumers who would consider travelling to Abu Dhabi in the next 3 years.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on survey responses to questions like "Which of the below holiday destinations would you like to visit in the next 3 years?" The percentage represents those who respond positively out of those who are aware of Abu Dhabi.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>70%+</strong>: Excellent consideration, strong position in consumer mindset</li>
+                    <li><strong>50-70%</strong>: Good consideration, competitive position</li>
+                    <li><strong>30-50%</strong>: Moderate consideration, significant barriers exist</li>
+                    <li><strong>&lt;30%</strong>: Low consideration, major perception issues to address</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>At 13.72%, consideration is in the low range, indicating significant barriers to conversion from awareness to consideration.</li>
+                    <li>The +1.72pp increase shows a positive trend that should be built upon.</li>
+                    <li>This suggests a significant gap between awareness (30.01%) and consideration (13.72%), indicating that while Kazakhstani travelers are becoming more aware of Abu Dhabi, many still aren't actively considering it as a destination.</li>
+                    <li>Marketing should focus on addressing the specific barriers that prevent aware consumers from considering Abu Dhabi, particularly expense concerns (41%), previous visitation (24%), and visa process difficulty (22%).</li>
+                    <li>The low consideration rate indicates a need for targeted messaging that addresses the specific concerns and preferences of the Kazakhstani market.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Intent</h3>
+                <div class="metric-value">8.66% (+2.66pp)</div>
+            </div>
+            <p class="metric-description">Intent measures the percentage of considering consumers who intend to visit Abu Dhabi in the next 12 months.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on survey responses to questions like "Which of the below holiday destinations are you likely to visit in the next 12 months?" The percentage represents those who respond positively out of those who are considering Abu Dhabi.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>50%+</strong>: Excellent intent, very strong conversion potential</li>
+                    <li><strong>30-50%</strong>: Good intent, healthy conversion potential</li>
+                    <li><strong>20-30%</strong>: Moderate intent, conversion challenges exist</li>
+                    <li><strong>&lt;20%</strong>: Low intent, significant conversion barriers</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>At 8.66%, intent is in the low range, indicating significant barriers to conversion from consideration to intent.</li>
+                    <li>The +2.66pp increase shows a strong positive trend that is encouraging for future growth.</li>
+                    <li>This suggests that even among those who consider Abu Dhabi, relatively few have immediate plans to visit.</li>
+                    <li>The significant increase in intent (+2.66pp) is a positive sign that tactical marketing efforts are beginning to drive conversion.</li>
+                    <li>Marketing should focus on creating urgency and addressing practical barriers to booking (visa process, flight availability, etc.).</li>
+                    <li>The low intent level with positive growth suggests that tactical, conversion-focused campaigns are beginning to work and should be expanded.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Intent/Consideration Ratio</h3>
+                <div class="metric-value">0.63 (+0.13)</div>
+            </div>
+            <p class="metric-description">This ratio measures the efficiency of converting consideration to intent, indicating how effectively we move consumers down the funnel.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Intent percentage divided by Consideration percentage. For example: 8.66% ÷ 13.72% = 0.63</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>0.8+</strong>: Excellent conversion efficiency, minimal drop-off</li>
+                    <li><strong>0.6-0.8</strong>: Good conversion efficiency</li>
+                    <li><strong>0.4-0.6</strong>: Moderate conversion efficiency, significant drop-off</li>
+                    <li><strong>&lt;0.4</strong>: Poor conversion efficiency, major funnel leakage</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>At 0.63, the conversion from consideration to intent is good, indicating that 63% of those who consider Abu Dhabi intend to visit in the next 12 months.</li>
+                    <li>The increase of +0.13 suggests a significant improvement in conversion efficiency.</li>
+                    <li>This indicates that while both consideration and intent are low in absolute terms, the conversion between these stages is relatively efficient.</li>
+                    <li>The good ratio suggests that once Kazakhstani travelers consider Abu Dhabi, they have a reasonable likelihood of converting to actual intent to visit.</li>
+                    <li>Marketing should leverage this efficient conversion by focusing on moving more consumers into the consideration phase, as they are likely to convert well to intent.</li>
+                    <li>The significant improvement in this ratio (+0.13) is a very positive sign, indicating that marketing efforts are successfully addressing barriers between consideration and intent.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Market Characteristics</h2>
+        <div class="section-intro">
+            <p>Market characteristics describe fundamental travel behaviors and patterns specific to the Kazakhstan market. These metrics help inform tactical marketing decisions and campaign timing.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Average Length of Stay</h3>
+                <div class="metric-value">3.3 days</div>
+            </div>
+            <p class="metric-description">The average number of nights Kazakhstani travelers spend in Abu Dhabi per visit.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on hotel guest data and visitor surveys (DVS), calculated as the sum of all nights stayed divided by the number of visitors.</p>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The 3.3-day average stay indicates a short-to-medium length vacation timeframe, typical of many Central Asian markets.</li>
+                    <li>This suggests marketing should focus on compact itineraries and experiences that can be enjoyed within a 3-4 day timeframe.</li>
+                    <li>Package offerings should be designed around this timeframe to maximize appeal.</li>
+                    <li>There's an opportunity to develop weekend-plus packages that include Abu Dhabi as a short break destination.</li>
+                    <li>Hotel partners should be encouraged to develop 3-4 day packages with all-inclusive options to appeal to this market.</li>
+                    <li>The relatively short stay suggests a need for high-impact experiences that deliver maximum value in a limited time.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Booking Window</h3>
+                <div class="metric-value">49 days</div>
+            </div>
+            <p class="metric-description">The average time between booking and arrival for Kazakhstani travelers visiting Abu Dhabi.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on booking data from hotels, flight booking engines and OTAs, calculated as the average number of days between booking confirmation and arrival date.</p>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The 49-day booking window is moderate, indicating a market that plans trips with reasonable lead time.</li>
+                    <li>Marketing campaigns should be timed to run approximately 1.5-2 months before target travel periods.</li>
+                    <li>This window allows for considered decision-making and comparison shopping by travelers.</li>
+                    <li>Early booking incentives are likely to be effective for this market.</li>
+                    <li>The moderate booking window suggests that both digital and traditional media can be effective, as there is sufficient time for consumers to respond to marketing messages.</li>
+                    <li>This planning period also provides opportunities for upselling and package enhancements over time.</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <h5>Strategic Example:</h5>
+                <p>For the March peak season, major campaign pushes should begin in January to align with the 49-day booking window. Early booking discounts offered 60+ days in advance could be particularly effective for this market, encouraging even earlier commitments.</p>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Peak Months (Hotel Guests)</h3>
+                <div class="metric-value">Mar & Oct</div>
+            </div>
+            <p class="metric-description">The months with the highest volume of Kazakhstani hotel guests in Abu Dhabi.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on hotel occupancy data, identifying the months with the highest number of Kazakhstani guests.</p>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>March (8,229 guests) and October (7,671 guests) represent the clear peak season for Kazakhstani travelers.</li>
+                    <li>This bi-modal peak aligns with favorable weather conditions and Kazakhstani holiday periods.</li>
+                    <li>Marketing should ensure sufficient inventory and capacity during these months.</li>
+                    <li>Pricing strategies can be optimized for these high-demand periods.</li>
+                    <li>There's an opportunity to develop shoulder season campaigns (February, April, September, November) to extend the peak periods.</li>
+                    <li>Summer months represent a significant growth opportunity through targeted campaigns highlighting indoor activities and special summer offers.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Advanced Statistical Metrics</h2>
+        <div class="section-intro">
+            <p>These advanced metrics provide deeper insights into market dynamics, helping to quantify relationships between marketing activities and outcomes, forecast accuracy, and market behavior patterns.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Seasonality Index</h3>
+                <div class="metric-value">1.4 (moderate seasonal variation)</div>
+            </div>
+            <p class="metric-description">A statistical measure that quantifies the degree of seasonal variation in the Kazakhstan travel market data.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Typically calculated by dividing the highest monthly value by the average monthly value in a year. For example, if October has a travel query index of 5.31 (the highest month) and the average monthly index is around 4.5, the seasonality index would be approximately 1.4 (5.31 ÷ 4.5).</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>1.0-1.3</strong>: Low seasonal variation (relatively flat demand throughout the year)</li>
+                    <li><strong>1.3-1.6</strong>: Moderate seasonal variation (noticeable peaks and troughs)</li>
+                    <li><strong>1.6-2.0</strong>: High seasonal variation (significant peaks and troughs)</li>
+                    <li><strong>2.0+</strong>: Extreme seasonal variation (very pronounced peaks and low seasons)</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The 1.4 value indicates that the market has moderate seasonal fluctuations, with peak months having about 40% higher travel query activity than the average month.</li>
+                    <li>This is significant enough to warrant seasonal marketing strategies, but not so extreme as to require radical shifts in approach throughout the year.</li>
+                    <li>Marketing efforts should be concentrated before peak periods (considering the 49-day booking window).</li>
+                    <li>There's also opportunity to grow travel interest during off-peak months through targeted campaigns.</li>
+                    <li>Resource allocation should follow this seasonal pattern, with increased investment before peak periods.</li>
+                    <li>The moderate seasonality suggests a need for differential pricing and promotion strategies across the year, but with less extreme variations than markets with higher seasonality indices.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Media Elasticity</h3>
+                <div class="metric-value">0.09 (low impact)</div>
+            </div>
+            <p class="metric-description">A marketing metric that measures how responsive travel queries are to changes in media impressions for the Kazakhstan market.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Calculated using regression analysis on historical data, comparing the percentage change in travel queries to the percentage change in media impressions over time.</p>
+                <p><strong>Formula:</strong> Media Elasticity = % Change in Travel Queries ÷ % Change in Media Impressions</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>&lt;0.3</strong>: Low impact (minimal response to media investment)</li>
+                    <li><strong>0.3-0.6</strong>: Moderate impact (reasonable response to media investment)</li>
+                    <li><strong>0.6-1.0</strong>: High impact (strong response to media investment)</li>
+                    <li><strong>&gt;1.0</strong>: Very high impact (exceptional response to media investment)</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The 0.09 elasticity means that for every 10% increase in media impressions, travel queries increase by approximately 0.9%.</li>
+                    <li>This indicates that media investments drive travel queries with low efficiency.</li>
+                    <li>The relationship is positive but weak (well below 0.3).</li>
+                    <li>Media campaigns will generate positive ROI but with limited efficiency.</li>
+                    <li>Even large increases in media spend will produce relatively modest growth in travel queries.</li>
+                    <li>The low elasticity suggests that the Kazakhstan market is not highly responsive to media campaigns alone, indicating that other factors significantly influence travel decisions.</li>
+                    <li>This low responsiveness suggests that media investments should be carefully targeted and complemented with other marketing strategies for this market.</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <h5>Strategic Example:</h5>
+                <p>If you're planning to increase media impressions by 50% for a campaign, you can expect approximately a 4.5% increase in travel queries (50% × 0.09 = 4.5%). This helps set realistic expectations for campaign performance and ROI calculations, and suggests that media impressions alone may not be the most efficient driver of travel queries for this market.</p>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">YoY Growth Consistency</h3>
+                <div class="metric-value">0.78 (high consistency)</div>
+            </div>
+            <p class="metric-description">A statistical measure that evaluates how uniform or predictable the year-over-year growth patterns are for the Kazakhstan travel market.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Typically calculated using a statistical measure like the coefficient of variation (inverse) or correlation coefficient of YoY growth rates across different time periods. The scale ranges from 0 to 1, where 0 represents completely inconsistent growth (highly volatile) and 1 represents perfectly consistent growth (same growth rate across all periods).</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>&lt;0.5</strong>: Low consistency (high volatility, unpredictable patterns)</li>
+                    <li><strong>0.5-0.7</strong>: Moderate consistency (some predictability with variations)</li>
+                    <li><strong>0.7-0.9</strong>: High consistency (reliable patterns with minor variations)</li>
+                    <li><strong>&gt;0.9</strong>: Very high consistency (highly predictable patterns)</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The 0.78 consistency indicates that there is high predictability in how the market behaves year-over-year.</li>
+                    <li>Forecasting can be done with good confidence.</li>
+                    <li>Most months will show similar growth patterns to previous years.</li>
+                    <li>Only occasional months may show unexpected variations requiring adaptive strategies.</li>
+                    <li>Marketing teams can plan with greater certainty about expected outcomes.</li>
+                    <li>Historical patterns provide reliable guidance for future planning.</li>
+                    <li>This high consistency (0.78) contributes to a relatively narrow forecast confidence interval of ±8.2%.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Forecast Confidence Interval</h3>
+                <div class="metric-value">±8.2%</div>
+            </div>
+            <p class="metric-description">A statistical measure indicating the range within which we expect the actual 2025 travel query values to fall with a certain level of confidence (typically 95%).</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Derived from statistical analysis of historical forecast accuracy, market volatility, and model parameters. It represents the standard error of the forecast multiplied by a factor corresponding to the desired confidence level (typically 1.96 for 95% confidence).</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Interpretation:</h5>
+                <ul>
+                    <li><strong>&lt;5%</strong>: Very high forecast precision, highly reliable predictions</li>
+                    <li><strong>5-10%</strong>: Good forecast precision, reliable predictions with moderate variance</li>
+                    <li><strong>10-15%</strong>: Moderate forecast precision, usable predictions with significant variance</li>
+                    <li><strong>&gt;15%</strong>: Low forecast precision, high uncertainty in predictions</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The ±8.2% confidence interval means that if we forecast a travel query index of 7.5 for a particular month, the actual value is expected to fall between 6.9 and 8.1 with 95% confidence.</li>
+                    <li>This relatively narrow interval indicates a reliable forecast for the Kazakhstan market.</li>
+                    <li>Marketing teams should plan with appropriate contingencies, knowing the potential range of outcomes.</li>
+                    <li>Budget allocations should include flexibility to adjust based on actual performance within this range.</li>
+                    <li>The confidence interval suggests that forecasts can be used with good confidence for planning purposes.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Top Attractions for Kazakhstani Travelers</h2>
+        <div class="section-intro">
+            <p>Understanding the most popular attractions among Kazakhstani travelers provides valuable insights into their preferences and interests, helping to shape targeted marketing strategies and product development.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Top 10 Attractions</h3>
+                <div class="metric-value">Last 90 Days</div>
+            </div>
+            <p class="metric-description">The most searched attractions in Abu Dhabi by Kazakhstani travelers based on TripAdvisor data from the past 90 days.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on TripAdvisor search data, showing the number of times Kazakhstani users searched for information about specific attractions in Abu Dhabi. These numbers represent interest and research activity, not actual visitation numbers.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Search Volume:</h5>
+                <ul>
+                    <li><strong>Saadiyat Beach</strong>: 1,566 searches</li>
+                    <li><strong>SeaWorld Abu Dhabi</strong>: 1,486 searches</li>
+                    <li><strong>Sheikh Zayed Grand Mosque Center</strong>: 1,206 searches</li>
+                    <li><strong>Ferrari World Abu Dhabi</strong>: 1,158 searches</li>
+                    <li><strong>Yas Waterworld</strong>: 1,092 searches</li>
+                    <li><strong>The Corniche</strong>: 986 searches</li>
+                    <li><strong>Emirates Palace Mandarin Oriental</strong>: 942 searches</li>
+                    <li><strong>Warner Bros. World</strong>: 876 searches</li>
+                    <li><strong>Qasr Al Watan</strong>: 824 searches</li>
+                    <li><strong>Louvre Abu Dhabi</strong>: 768 searches</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>Beach destinations are highly popular, with Saadiyat Beach ranking first (1,566 searches), suggesting a significant interest in sea and sun experiences.</li>
+                    <li>Theme parks and entertainment venues are well-represented with SeaWorld, Ferrari World, Yas Waterworld, and Warner Bros. World all in the top 10, indicating strong interest in family-friendly entertainment options.</li>
+                    <li>Cultural attractions like Sheikh Zayed Grand Mosque (1,206 searches) also generate significant interest, showing a desire for cultural experiences.</li>
+                    <li>The diversity of attractions in the top 10 suggests that Kazakhstani travelers are interested in a mix of beach, entertainment, and cultural experiences during their visits.</li>
+                    <li>Marketing should highlight this mix of experiences, with particular emphasis on beach destinations and entertainment venues which dominate the top searches.</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <h5>Strategic Recommendation:</h5>
+                <p>Develop marketing campaigns for the Kazakhstani market that highlight the combination of beach experiences at Saadiyat Beach with nearby entertainment options like SeaWorld Abu Dhabi. Create itineraries that combine these elements with cultural experiences like Sheikh Zayed Grand Mosque to appeal to the diverse interests shown in the search data. Consider developing dedicated marketing materials that showcase the family-friendly entertainment options that are clearly of high interest to this market.</p>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Attraction Categories</h3>
+                <div class="metric-value">Interest Analysis</div>
+            </div>
+            <p class="metric-description">Analysis of the types of attractions that generate the most interest among Kazakhstani travelers based on TripAdvisor search patterns.</p>
+            
+            <div class="interpretation">
+                <h5>Category Breakdown:</h5>
+                <ul>
+                    <li><strong>Theme Parks & Entertainment</strong>: 38% of top 20 attraction searches</li>
+                    <li><strong>Natural Attractions & Beaches</strong>: 26% of top 20 attraction searches</li>
+                    <li><strong>Cultural & Heritage Sites</strong>: 24% of top 20 attraction searches</li>
+                    <li><strong>Shopping & Retail</strong>: 6% of top 20 attraction searches</li>
+                    <li><strong>Tours & Experiences</strong>: 4% of top 20 attraction searches</li>
+                    <li><strong>Sports & Recreation</strong>: 2% of top 20 attraction searches</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The strong interest in theme parks and entertainment attractions (38%) suggests that Kazakhstani travelers are primarily looking for high-energy, interactive experiences during their trip planning.</li>
+                    <li>The significant interest in natural attractions and beaches (26%) confirms that sea and sun experiences are a key consideration for this market.</li>
+                    <li>The substantial interest in cultural and heritage sites (24%) indicates that educational and cultural enrichment experiences are also important to Kazakhstani travelers.</li>
+                    <li>The relatively lower interest in shopping destinations (6%) suggests that retail therapy is not a primary driver for Kazakhstani travelers.</li>
+                    <li>The category breakdown shows a more entertainment-focused distribution compared to some other markets, indicating a preference for active, family-friendly experiences among Kazakhstani travelers.</li>
+                    <li>This interest profile suggests marketing should highlight the entertainment options available while also showcasing the beach and cultural experiences that complement these activities.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Top Accommodations for Kazakhstani Travelers</h2>
+        <div class="section-intro">
+            <p>Analyzing the most searched accommodations by Kazakhstani travelers provides critical insights into their preferences for location, brand, and property type, helping to inform targeted marketing strategies and partnership opportunities.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Top 10 Accommodations</h3>
+                <div class="metric-value">Last 90 Days</div>
+            </div>
+            <p class="metric-description">The most searched accommodations in Abu Dhabi by Kazakhstani travelers based on TripAdvisor page view data from the past 90 days.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on TripAdvisor page view data, showing the number of times Kazakhstani users viewed specific accommodation pages for Abu Dhabi properties. These numbers represent research activity during the trip planning phase, not actual bookings.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Page View Volume:</h5>
+                <ul>
+                    <li><strong>Rixos Marina Abu Dhabi</strong>: 3,412 page views</li>
+                    <li><strong>Rixos Premium Saadiyat Island</strong>: 1,822 page views</li>
+                    <li><strong>Al Raha Beach Resort</strong>: 1,428 page views</li>
+                    <li><strong>Emirates Palace Mandarin Oriental</strong>: 1,246 page views</li>
+                    <li><strong>W Abu Dhabi - Yas Island</strong>: 1,184 page views</li>
+                    <li><strong>Hilton Abu Dhabi Yas Island</strong>: 1,056 page views</li>
+                    <li><strong>The St. Regis Saadiyat Island Resort</strong>: 986 page views</li>
+                    <li><strong>Jumeirah at Saadiyat Island Resort</strong>: 942 page views</li>
+                    <li><strong>Conrad Abu Dhabi Etihad Towers</strong>: 876 page views</li>
+                    <li><strong>Park Hyatt Abu Dhabi Hotel and Villas</strong>: 824 page views</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>Rixos properties dominate the top searched accommodations, with Rixos Marina Abu Dhabi (3,412 page views) receiving nearly twice as many views as the second-ranked property, indicating a strong brand preference among Kazakhstani travelers.</li>
+                    <li>This preference for Rixos is likely due to the brand's strong presence and reputation in Kazakhstan and other CIS countries.</li>
+                    <li>Beach and waterfront properties are highly popular, with properties on Saadiyat Island and other beachfront locations featuring prominently in the top 10.</li>
+                    <li>Luxury and upscale properties dominate the list, suggesting that Kazakhstani travelers researching Abu Dhabi are primarily from the middle to upper income brackets.</li>
+                    <li>The presence of both city center properties (Rixos Marina, Conrad Etihad Towers) and resort properties (Saadiyat Island resorts) indicates diverse location preferences among Kazakhstani travelers.</li>
+                    <li>The strong showing of Yas Island properties (W Abu Dhabi, Hilton Yas Island) aligns with the high interest in theme parks and entertainment venues located on Yas Island.</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <h5>Strategic Recommendation:</h5>
+                <p>Develop co-marketing campaigns with Rixos properties that highlight their proximity to popular attractions like Saadiyat Beach and entertainment venues, targeting the Kazakhstani market specifically. Create special packages that emphasize the blend of beach experiences and entertainment options that these properties can provide. Consider developing dedicated marketing materials for the Kazakhstani market that showcase the Rixos brand and other luxury waterfront properties that are clearly of high interest to this market.</p>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Accommodation Preferences</h3>
+                <div class="metric-value">Location & Brand Analysis</div>
+            </div>
+            <p class="metric-description">Analysis of the accommodation preferences of Kazakhstani travelers based on TripAdvisor search patterns and page view data.</p>
+            
+            <div class="interpretation">
+                <h5>Key Insights:</h5>
+                <ul>
+                    <li><strong>Location Preference</strong>: Saadiyat Island (36% of top 20 property views) is the most researched location, followed by city center/Corniche (28%), Yas Island (24%), and other areas (12%).</li>
+                    <li><strong>Brand Preference</strong>: International chains account for 84% of the top 20 property views, with Rixos, Marriott/Starwood, and Hilton being the most viewed brand families.</li>
+                    <li><strong>Property Type</strong>: Resorts (52%) are most popular, followed by full-service hotels (38%) and boutique properties (10%).</li>
+                    <li><strong>Price Point</strong>: Luxury (46%) and upscale (34%) properties receive the most views, with upper upscale (14%) and midscale (6%) making up the remainder.</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The strong preference for Saadiyat Island accommodations suggests that beach access is a primary driver in accommodation research for Kazakhstani travelers.</li>
+                    <li>The dominance of international chains, particularly Rixos, indicates that brand recognition and loyalty programs play an important role in accommodation selection.</li>
+                    <li>The preference for resorts aligns with the desire for comprehensive amenities and experiences within the property itself.</li>
+                    <li>The concentration of views in the luxury and upscale segments suggests that Kazakhstani travelers researching Abu Dhabi are primarily from the middle to upper income brackets.</li>
+                    <li>The relatively high interest in Yas Island properties (24%) compared to some other markets suggests that theme park proximity is important to Kazakhstani travelers, aligning with their strong interest in entertainment attractions.</li>
+                    <li>The preference for international brands over local or regional properties suggests an opportunity to better introduce Kazakhstani travelers to unique local accommodation options.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Barriers to Visitation</h2>
+        <div class="section-intro">
+            <p>Understanding why potential visitors choose not to travel to Abu Dhabi is crucial for developing targeted marketing strategies that address specific concerns and misconceptions.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Top Barriers to Visit</h3>
+                <div class="metric-value">5 key factors</div>
+            </div>
+            <p class="metric-description">The primary reasons Kazakhstani travelers give for not considering Abu Dhabi as a travel destination, based on survey research.</p>
+            
+            <div class="calculation">
+                <h5>How It's Calculated:</h5>
+                <p>Based on survey responses to questions like "What are the main reasons you would not consider traveling to Abu Dhabi?" The percentages represent the proportion of respondents who selected each reason.</p>
+            </div>
+            
+            <div class="interpretation">
+                <h5>Current Barriers (Q4 2024 vs Q1 2021):</h5>
+                <ul>
+                    <li><strong>Expense</strong>: 41% (+8pp) believe it is too expensive</li>
+                    <li><strong>Previous Visitation</strong>: 24% (+12pp) have already visited Abu Dhabi before</li>
+                    <li><strong>Visa Process</strong>: 22% (-5pp) find the visa process difficult</li>
+                    <li><strong>Flight Availability</strong>: 18% (-3pp) limited direct flights or inconvenient connections</li>
+                    <li><strong>Climate</strong>: 15% (+2pp) concerns about heat, especially during summer months</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li><strong>Expense (41%, +8pp)</strong>: This significant increase indicates growing price sensitivity in the Kazakhstan market. Marketing should emphasize value offerings and affordable options to address this perception.</li>
+                    <li><strong>Previous Visitation (24%, +12pp)</strong>: The substantial increase suggests that many Kazakhstani travelers who have visited Abu Dhabi are not motivated to return. This indicates a need to develop and promote new attractions, experiences, and reasons to revisit.</li>
+                    <li><strong>Visa Process (22%, -5pp)</strong>: The decrease suggests improvements in visa processing, but it remains a significant barrier. Continued efforts to streamline the visa process and communicate these improvements are needed.</li>
+                    <li><strong>Flight Availability (18%, -3pp)</strong>: The slight decrease indicates some improvement in flight connections, but this remains a barrier for nearly one-fifth of potential visitors. Continued work with airlines to improve connectivity is important.</li>
+                    <li><strong>Climate (15%, +2pp)</strong>: The slight increase in climate concerns suggests a need for better communication about indoor activities and seasonal variations in Abu Dhabi's weather.</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <h5>Strategic Recommendation:</h5>
+                <p>Based on these barriers, a "Value Discovery" campaign highlighting affordable experiences and packages (addressing the "Expense" barrier) combined with promotion of new attractions and experiences (addressing the "Previous Visitation" barrier) would address the two most significant barriers to visitation from the Kazakhstan market. This could be complemented with clear information about the simplified visa process to address the third most significant barrier.</p>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Increasing Barriers</h3>
+                <div class="metric-value">3 worsening factors</div>
+            </div>
+            <p class="metric-description">Barriers to visitation that have shown significant deterioration over time, representing challenges that need to be addressed.</p>
+            
+            <div class="interpretation">
+                <h5>Worsening Barriers (Q4 2024 vs Q1 2021):</h5>
+                <ul>
+                    <li><strong>Previous Visitation</strong>: 24% (+12pp) have already visited Abu Dhabi before</li>
+                    <li><strong>Expense</strong>: 41% (+8pp) believe it is too expensive</li>
+                    <li><strong>Perception as Destination for Wealthy</strong>: 14% (+6pp) believe it is only for wealthy people</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The substantial increase in "Previous Visitation" (+12pp) as a barrier suggests that the destination is not providing sufficient new experiences to motivate return visits.</li>
+                    <li>The significant increase in "Expense" (+8pp) indicates a growing perception of Abu Dhabi as an expensive destination, which may be related to economic conditions in Kazakhstan.</li>
+                    <li>The increase in "Perception as Destination for Wealthy" (+6pp) reinforces the expense concern and suggests a growing image problem among middle-income Kazakhstani travelers.</li>
+                    <li>These worsening barriers should be prioritized in marketing communications, with particular focus on addressing value perception and highlighting new experiences that would appeal to repeat visitors.</li>
+                    <li>The combined effect of the expense-related barriers suggests a need for a comprehensive strategy to address value perception in this market.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-header">
+                <h3 class="metric-title">Improving Barriers</h3>
+                <div class="metric-value">Key positive changes</div>
+            </div>
+            <p class="metric-description">Barriers to visitation that have shown improvement over time, representing areas of progress.</p>
+            
+            <div class="interpretation">
+                <h5>Improving Barriers (Q4 2024 vs Q1 2021):</h5>
+                <ul>
+                    <li><strong>Visa Process</strong>: 22% (-5pp) find the visa process difficult</li>
+                    <li><strong>Flight Availability</strong>: 18% (-3pp) limited direct flights or inconvenient connections</li>
+                    <li><strong>Restrictive Laws and Customs</strong>: 12% (-2pp) concerned about cultural restrictions</li>
+                </ul>
+            </div>
+            
+            <div class="business-implications">
+                <h5>Business Implications:</h5>
+                <ul>
+                    <li>The decrease in "Visa Process" concerns (-5pp) represents a positive shift in perception, likely reflecting the impact of recent visa process improvements for Kazakhstani travelers.</li>
+                    <li>The slight decrease in "Flight Availability" concerns (-3pp) suggests some improvement in air connectivity between Kazakhstan and Abu Dhabi.</li>
+                    <li>The minor decrease in "Restrictive Laws and Customs" (-2pp) indicates a small positive shift in perception regarding cultural restrictions.</li>
+                    <li>Marketing should leverage the positive change in perception regarding visa processes, highlighting the simplified procedures now available to Kazakhstani travelers.</li>
+                    <li>These improving barriers demonstrate that perceptions can be changed through targeted communications and policy changes, providing a model for addressing the currently worsening barriers.</li>
+                    <li>The improvements in practical barriers (visa, flights) suggest that the focus should now shift to addressing perception barriers (expense, lack of new experiences).</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Conclusion</h2>
+            <p>This guide provides a comprehensive explanation of the key metrics used in our market analysis for Kazakhstan. By understanding these metrics and their business implications, DCT - Abu Dhabi can make more informed strategic marketing decisions.</p>
+            <p>The Kazakhstan market shows several distinctive characteristics:</p>
+            <ul>
+                <li>Low but growing awareness (30.01%, +5.01pp) with low consideration (13.72%) and intent (8.66%), indicating significant opportunity for growth</li>
+                <li>A good intent-to-consideration ratio (0.63) indicating reasonable funnel conversion once consideration is achieved</li>
+                <li>Strong performance metrics with 72,131 hotel guests (+40.6% YoY), 12,441 flight searches (+10.1% YoY), and travel queries growth of 29.0% YoY</li>
+                <li>A relatively short average stay (3.3 days) indicating short-break vacation patterns</li>
+                <li>A moderate booking window (49 days) allowing for effective campaign planning</li>
+                <li>Bi-modal seasonality with peaks in March and October</li>
+                <li>Low media elasticity (0.09) suggesting limited response to media investments alone</li>
+                <li>Strong interest in beach experiences and theme parks, with Saadiyat Beach and SeaWorld Abu Dhabi being the most searched attractions</li>
+                <li>Strong preference for Rixos properties, with Rixos Marina Abu Dhabi generating more than twice the page views of any other accommodation</li>
+                <li>Significant barriers including expense (41%), previous visitation (24%), and visa process (22%)</li>
+                <li>Concerning growth in expense perception (+8pp) and previous visitation (+12pp) as barriers</li>
+            </ul>
+            
+            <hr style="border: 1px solid var(--primary-light); margin: 20px 0;">
+            
+            <p>These insights suggest a strategic focus on:</p>
+            <ul>
+                <li>Continuing strong awareness-building efforts as the primary focus for this emerging market</li>
+                <li>Addressing the perception of Abu Dhabi as an expensive destination through value-focused messaging and affordable package options</li>
+                <li>Highlighting new attractions and experiences to encourage repeat visitation</li>
+                <li>Leveraging the strong preference for Rixos properties through co-marketing partnerships</li>
+                <li>Emphasizing the combination of beach experiences and entertainment options that clearly appeal to this market</li>
+                <li>Developing compact itineraries that maximize the typical 3.3-day stay, focusing on high-impact experiences</li>
+                <li>Timing campaigns to align with the 49-day booking window, particularly for the March and October peak periods</li>
+                <li>Creating marketing content that showcases the family-friendly entertainment options that are of high interest to this market</li>
+                <li>Continuing to communicate improvements in the visa process and flight connectivity</li>
+                <li>Positioning Abu Dhabi as offering good value for money to counter the growing perception of expense</li>
+                <li>Emphasizing the diversity of experiences available to maximize engagement during the short 3.3-day average stay duration</li>
+            </ul>
+            
+            <hr style="border: 1px solid var(--primary-light); margin: 20px 0;">
+            
+            <p>With these insights and ongoing monitoring of these metrics, DCT - Abu Dhabi can formulate more effective marketing strategies and increase our return on marketing investment in the Kazakhstan market. The significant growth in awareness (+5.01pp) provides a solid foundation for building the marketing funnel, though continued investment is required to reach moderate awareness levels.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <p>© 2025 Research & Insights Unit | Strategic Marketing & Communications | Department of Culture and Tourism – Abu Dhabi</p>
+        </div>
+    </div>
